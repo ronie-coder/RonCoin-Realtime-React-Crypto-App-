@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+.home{
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/format:webp/1*yS-CZkLE9YkfqX66AT9QsA.gif);
+    width: 100vw;
+    min-height: 92vh;
+    position: relative;
+}
+.title{
+    height: 50vh;
+    width: 30vw;
+    color: white;
+    position: absolute;
+    top: 17vh;
+    left: 5vw;
+    font-family: 'Bebas Neue';
+}
+.underline{
+    width: 8vw;
+    height: 3px;
+    background-color:#ffffff;
+    
+    
+    animation: moving 1s  ease-in-out infinite alternate-reverse;
+}
+.images{
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.7rem;
+}
+.bitcoin{
+    rotate: -12deg;
+    height: 4.5rem;
+    animation: bounce 1s  ease-in-out infinite alternate-reverse;
+    cursor: pointer;
+}
+.coin{
+    height: 4.5rem;
+    animation: bounce 1s  ease-in-out infinite alternate-reverse;
+    cursor: pointer;
+}
+
+
+
+
+@keyframes moving{
+0%{
+width: 0vw;
+}
+
+100%{
+    width: 8vw;
+}
+}
+
+@keyframes bounce{
+
+    from { transform: translate3d(0, 0, 0);} 
+    to { transform: translate3d(0, 2.3rem, 0);} 
+}
+
+@media screen and (max-width: 500px) {
+    .title{
+        width: 100vw;
+    }
+    .bitcoin{
+        
+        height: 3.5rem;
+        animation: bounce 1s  ease-in-out infinite alternate-reverse;
+    }
+    .coin{
+        height: 3.5rem;
+       
+    }
+    .images{
+        justify-content: space-evenly;
+        width: 100vw;
+        padding-right: 5vw;
+    }
+    .underline{
+        display: none;
+    }
+}
+.contact_btn {
+    width: 4rem;
+    text-align: center;
+    
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .btn12 {
+    display: inline-block;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px 3px hsla(0, 0%, 0%, .6);
+    width: 7em;
+    padding: 1em;
+    color: #fdfdfd;
+    text-align: center;
+    text-shadow: 0 2px 0 hsla(0, 0%, 0%, .25);
+    font: 400 1.5em /1 'Raleway', sans-serif;
+    letter-spacing: 4px;
+    background: #ee3724;
+    cursor: pointer;
+  }
+  
+  .anim {
+    animation: jiggle 2.0s ease-out infinite;
+  }
+  
+  @keyframes jiggle {
+    48%, 62% {
+      transform: scale(1.0, 1.0)
+    }
+    50% {
+      transform: scale(1.1, 0.9)
+    }
+    56% {
+      transform: scale(0.9, 1.1) translate(0, -5px)
+    }
+    59% {
+      transform: scale(1.0, 1.0) translate(0, -3px)
+    }
+  }
